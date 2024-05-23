@@ -8,21 +8,21 @@ class Program
     public static void Main(string[] args)
     {
         Console.WriteLine(
-            " #####     ####     ###    ######   #######           ########  #####   #####     #####   \r\n" +
-            "##   ##   ##  ##   ## ##    ##  ##   ##   #           ## ## ## ### ###   ## ##   ### ###  \r\n" +
-            "##       ##       ##   ##   ##  ##   ##                  ##    ##   ##   ##  ##  ##   ##  \r\n" +
-            " #####   ##       ##   ##   #####    ####                ##    ##   ##   ##  ##  ##   ##  \r\n" +
-            "     ##  ##       #######   ## ##    ##                  ##    ##   ##   ##  ##  ##   ##  \r\n" +
-            "##   ##   ##  ##  ##   ##   ## ##    ##   #              ##    ### ###   ## ##   ### ###  \r\n" +
-            " #####     ####   ##   ##  #### ##  #######             ####    #####   #####     #####   \r\n");
+            " #####     ###      ####   ######   #######           ########  #####   #####     #####   \r\n" +
+            "##   ##   ## ##    ##  ##   ##  ##   ##   #           ## ## ## ### ###   ## ##   ### ###  \r\n" +
+            "##       ##   ##  ##        ##  ##   ##                  ##    ##   ##   ##  ##  ##   ##  \r\n" +
+            " #####   ##   ##  ##        #####    ####                ##    ##   ##   ##  ##  ##   ##  \r\n" +
+            "     ##  #######  ##        ## ##    ##                  ##    ##   ##   ##  ##  ##   ##  \r\n" +
+            "##   ##  ##   ##   ##  ##   ## ##    ##   #              ##    ### ###   ## ##   ### ###  \r\n" +
+            " #####   ##   ##    ####   #### ##  #######             ####    #####   #####     #####   \r\n");
 
         string path = "C:\\Users\\M02419\\OneDrive - Nürnberger Baugruppe GmbH + Co KG\\Dokumente\\CodingWoche\\TODOList.txt";
         int i = 0;
         string toDoOptions = "Hello!\n" +
                 "What do you want to do?\n" +
                 "[S]ee all TODOs\n" +
-                "[C]hange a TODO\n" +
                 "[A]dd a TODO\n" +
+                "[C]hange a TODO\n" +
                 "[R]emove a TODO\n" +
                 "[E]xit";
         while (i == 0)
@@ -49,6 +49,7 @@ class Program
                 case 'E':
                     Console.WriteLine();
                     Console.WriteLine("Goodbye!");
+                    Thread.Sleep(500);
                     i = 1;
                     break;
                 case 'T':
